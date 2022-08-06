@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('scm') {
             steps {
-                'https://github.com/satankumar/jenkins.git'
+                sh 'https://github.com/satankumar/jenkins.git'
             }
        }
         stage('docker build') {
