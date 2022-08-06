@@ -6,10 +6,10 @@ pipeline {
             steps {
                 https://github.com/satankumar/jenkins.git
             }
-        }
+       }
         stage('docker build') {
             steps {
-                sh 'sudo docker build  -t  satan12345/pipeline:v1 .'
+                sh 'sudo docker build  -t  satan12345/pipeline:v1'
             }
         }
         stage('docker images') {
